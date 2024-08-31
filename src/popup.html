@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>yovisto Curricula Browser</title>
+    <style>
+        body {
+            width: 200px;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+        a {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <h1>yovisto Curricula Browser</h1>
+    <a href="https://edu.yovisto.com/sparql?default-graph-uri=&query=SELECT DISTINCT * WHERE { <https://edu.yovisto.com/resource/bb/curriculum/Berlin> ?predicate ?object . } ORDER BY (isIRI(?object)) ASC(?object)" target="_blank" rel="noopener noreferrer">Bundesland Berlin</a>
+    <ul>
+        <li><a href="https://edu.yovisto.com/sparql?default-graph-uri=&query=SELECT+DISTINCT+*%0D%0AWHERE+%7B%0D%0A%3Chttps%3A%2F%2Fedu.yovisto.com%2Fresource%2Fbb%2Fcurriculum%2FBerlin%3E+%3Chttps%3A%2F%2Fw3id.org%2Fcurriculum%2FhasCurriculum%3E+%3FCurriculum+.%0D%0A%3FCurriculum+skos%3AprefLabel+%3FBeschreibung+.%0D%0A%7D%0D%0A%0D%0A&format=text%2Fhtml&should-sponge=&timeout=0&signal_void=on" target="_blank" rel="noopener noreferrer">Curricula</a></li>
+    </ul> 
+    <a href="https://edu.yovisto.com/sparql?default-graph-uri=&query=SELECT DISTINCT * WHERE { <https://edu.yovisto.com/resource/bb/curriculum/Brandenburg> ?predicate ?object . } ORDER BY (isIRI(?object)) ASC(?object)" target="_blank" rel="noopener noreferrer">Bundesland Brandenburg</a>
+    <ul>
+        <li><a href="https://edu.yovisto.com/sparql?default-graph-uri=&query=SELECT+DISTINCT+*%0D%0AWHERE+%7B%0D%0A%3Chttps%3A%2F%2Fedu.yovisto.com%2Fresource%2Fbb%2Fcurriculum%2FBrandenburg%3E+%3Chttps%3A%2F%2Fw3id.org%2Fcurriculum%2FhasCurriculum%3E+%3FCurriculum+.%0D%0A%3FCurriculum+skos%3AprefLabel+%3FBeschreibung+.%0D%0A%7D%0D%0A%0D%0A&format=text%2Fhtml&should-sponge=&timeout=0&signal_void=on" target="_blank" rel="noopener noreferrer">Curricula</a></li>
+    </ul> 
+</body>
+</html>
+
+
+
