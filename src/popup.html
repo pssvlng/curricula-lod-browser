@@ -12,20 +12,70 @@
             display: block;
             margin-bottom: 10px;
         }
+
+        table {
+            border-collapse: collapse;
+            width: 100%; 
+        }
+        td {
+            padding: 0; 
+            margin: 0; 
+        }
+        tr {
+            margin: 0; 
+        }        
+        .indent {
+            padding-left: 30px; 
+        }
+        ul, ol {
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
+            
+        }
+        li {
+            padding: 0; /* Remove padding from list items */
+            margin: 0; /* Remove margin from list items */
+        }
     </style>
 </head>
 <body>
     
     
-    <h1>yovisto Curricula Browser</h1>
-    <a href="https://edu.yovisto.com/sparql?default-graph-uri=&query=SELECT DISTINCT * WHERE { <https://edu.yovisto.com/resource/bb/curriculum/Berlin> ?predicate ?object . } ORDER BY (isIRI(?object)) ASC(?object)" target="_blank" rel="noopener noreferrer">Bundesland Berlin</a>
-    <ul>
-        <li><a href="https://edu.yovisto.com/sparql?default-graph-uri=&query=SELECT+DISTINCT+*%0D%0AWHERE+%7B%0D%0A%3Chttps%3A%2F%2Fedu.yovisto.com%2Fresource%2Fbb%2Fcurriculum%2FBerlin%3E+%3Chttps%3A%2F%2Fw3id.org%2Fcurriculum%2FhasCurriculum%3E+%3FCurriculum+.%0D%0A%3FCurriculum+skos%3AprefLabel+%3FBeschreibung+.%0D%0A%7D%0D%0A%0D%0A&format=text%2Fhtml&should-sponge=&timeout=0&signal_void=on" target="_blank" rel="noopener noreferrer">Curricula</a></li>
-    </ul> 
-    <a href="https://edu.yovisto.com/sparql?default-graph-uri=&query=SELECT DISTINCT * WHERE { <https://edu.yovisto.com/resource/bb/curriculum/Brandenburg> ?predicate ?object . } ORDER BY (isIRI(?object)) ASC(?object)" target="_blank" rel="noopener noreferrer">Bundesland Brandenburg</a>
-    <ul>
-        <li><a href="https://edu.yovisto.com/sparql?default-graph-uri=&query=SELECT+DISTINCT+*%0D%0AWHERE+%7B%0D%0A%3Chttps%3A%2F%2Fedu.yovisto.com%2Fresource%2Fbb%2Fcurriculum%2FBrandenburg%3E+%3Chttps%3A%2F%2Fw3id.org%2Fcurriculum%2FhasCurriculum%3E+%3FCurriculum+.%0D%0A%3FCurriculum+skos%3AprefLabel+%3FBeschreibung+.%0D%0A%7D%0D%0A%0D%0A&format=text%2Fhtml&should-sponge=&timeout=0&signal_void=on" target="_blank" rel="noopener noreferrer">Curricula</a></li>
-    </ul> 
+    <h1>yovisto Curricula Browser</h1>    
+    <table style="border-collapse: collapse;">
+        <tr>
+          <td><a href="https://edu.yovisto.com/sparql?default-graph-uri=&query=SELECT DISTINCT * WHERE { <https://edu.yovisto.com/resource/bb/curriculum/Berlin> ?predicate ?object . } ORDER BY (isIRI(?object)) ASC(?object)" target="_blank" rel="noopener noreferrer">Bundesland Berlin</a> </td>
+          <td><a href="https://edu.yovisto.com/sparql?default-graph-uri=&qtxt=SELECT DISTINCT * WHERE { <https://edu.yovisto.com/resource/bb/curriculum/Berlin> ?predicate ?object . } ORDER BY (isIRI(?object)) ASC(?object)" target="_blank" rel="noopener noreferrer">[SPARQL]</a></td>
+        </tr>
+        <tr>
+            <td class="indent">
+                <ul>
+                    <li><a href="https://edu.yovisto.com/sparql?default-graph-uri=&query=SELECT+DISTINCT+*%0D%0AWHERE+%7B%0D%0A%3Chttps%3A%2F%2Fedu.yovisto.com%2Fresource%2Fbb%2Fcurriculum%2FBerlin%3E+%3Chttps%3A%2F%2Fw3id.org%2Fcurriculum%2FhasCurriculum%3E+%3FCurriculum+.%0D%0A%3FCurriculum+skos%3AprefLabel+%3FBeschreibung+.%0D%0A%7D%0D%0A%0D%0A&format=text%2Fhtml&should-sponge=&timeout=0&signal_void=on" target="_blank" rel="noopener noreferrer">Curricula</a></li>
+                </ul>                
+            </td>
+            <td>
+                <a href="https://edu.yovisto.com/sparql?default-graph-uri=&qtxt=SELECT+DISTINCT+*%0D%0AWHERE+%7B%0D%0A%3Chttps%3A%2F%2Fedu.yovisto.com%2Fresource%2Fbb%2Fcurriculum%2FBerlin%3E+%3Chttps%3A%2F%2Fw3id.org%2Fcurriculum%2FhasCurriculum%3E+%3FCurriculum+.%0D%0A%3FCurriculum+skos%3AprefLabel+%3FBeschreibung+.%0D%0A%7D%0D%0A%0D%0A&format=text%2Fhtml&should-sponge=&timeout=0&signal_void=on" target="_blank" rel="noopener noreferrer">[SPARQL]</a>
+            </td>
+        </tr>
+    </table>                
+    <br />    
+    <table style="border-collapse: collapse;">
+        <tr>
+          <td><a href="https://edu.yovisto.com/sparql?default-graph-uri=&query=SELECT DISTINCT * WHERE { <https://edu.yovisto.com/resource/bb/curriculum/Brandenburg> ?predicate ?object . } ORDER BY (isIRI(?object)) ASC(?object)" target="_blank" rel="noopener noreferrer">Bundesland Brandenburg</a></td>
+          <td><a href="https://edu.yovisto.com/sparql?default-graph-uri=&qtxt=SELECT DISTINCT * WHERE { <https://edu.yovisto.com/resource/bb/curriculum/Brandenburg> ?predicate ?object . } ORDER BY (isIRI(?object)) ASC(?object)" target="_blank" rel="noopener noreferrer">[SPARQL]</a></td>          
+        </tr>
+        <tr>
+            <td class="indent">
+                <ul>
+                    <li><a href="https://edu.yovisto.com/sparql?default-graph-uri=&query=SELECT+DISTINCT+*%0D%0AWHERE+%7B%0D%0A%3Chttps%3A%2F%2Fedu.yovisto.com%2Fresource%2Fbb%2Fcurriculum%2FBrandenburg%3E+%3Chttps%3A%2F%2Fw3id.org%2Fcurriculum%2FhasCurriculum%3E+%3FCurriculum+.%0D%0A%3FCurriculum+skos%3AprefLabel+%3FBeschreibung+.%0D%0A%7D%0D%0A%0D%0A&format=text%2Fhtml&should-sponge=&timeout=0&signal_void=on" target="_blank" rel="noopener noreferrer">Curricula</a></li>
+                </ul>                
+            </td>
+            <td>
+                <a href="https://edu.yovisto.com/sparql?default-graph-uri=&qtxt=SELECT+DISTINCT+*%0D%0AWHERE+%7B%0D%0A%3Chttps%3A%2F%2Fedu.yovisto.com%2Fresource%2Fbb%2Fcurriculum%2FBrandenburg%3E+%3Chttps%3A%2F%2Fw3id.org%2Fcurriculum%2FhasCurriculum%3E+%3FCurriculum+.%0D%0A%3FCurriculum+skos%3AprefLabel+%3FBeschreibung+.%0D%0A%7D%0D%0A%0D%0A&format=text%2Fhtml&should-sponge=&timeout=0&signal_void=on" target="_blank" rel="noopener noreferrer">[SPARQL]</a>
+            </td>
+        </tr>
+    </table>    
+    
 </body>
 </html>
 
